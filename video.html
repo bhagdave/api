@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<title>Sample video stuff</title>
+		<script src='media-player.js'></script>
+		<link href='media-player.css' />
+	</head>
+<body>
+	<div id="media-player">
+		<video id='media-video' controls>
+			<source src='Wildlife.mp4' type='video/mp4'>
+			<source src='Wildlife.webm' type='video/webm'>
+		</video>
+		<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+		<div id='media-controls'>
+			<button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+			<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>			
+			<button id='volume-inc-button' class='volume-plus' title='stop' onclick='changeVolume("+");'>Increase Volume</button>			
+			<button id='volume-dec-button' class='volume-minus' title='stop' onclick='changeVolume("-");'>Decrease Volume</button>			
+			<button id='mute-button' class='mute' title='mute' onclick='toggleMute();'>Mute</button>		
+			<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>					
+		</div>
+	</div>
+</body>
+</html>
+	

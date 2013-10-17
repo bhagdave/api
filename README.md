@@ -1,0 +1,1 @@
+An API to allow the classification of terms for a search based system that was used for games specific searching. Also includes a Google Image Search and also a wikipedia search for relevant information
